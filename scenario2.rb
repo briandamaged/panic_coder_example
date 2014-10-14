@@ -1,4 +1,21 @@
-# This is where I'm trying new Ruby things
+# Scenario: There is a bomb on the other side
+#           of the football field.  Someone
+#           also spilled lava on the football
+#           field, and your robot is allergic
+#           to lava.  Generate a sequence of
+#           steps that will allow your robot
+#           to defuse the bomb.
+#
+# Map:
+#           R| | | | | | | | |
+#           -+-+-+-+-+-+-+-+-+-
+#           *|*|*|*|*|*|*|*|*|
+#           -+-+-+-+-+-+-+-+-+-
+#            | | | | | | | | |
+#           -+-+-+-+-+-+-+-+-+-
+#            |*|*|*|*|*|*|*|*|*
+#           -+-+-+-+-+-+-+-+-+-
+#            | | | | | | | | |B
 
 9.times do
   puts("RIGHT")
@@ -20,5 +37,5 @@ end
   puts("RIGHT")
 end
 
-puts("EAT(BOMB)")
+puts("DEFUSE(BOMB)")
 
