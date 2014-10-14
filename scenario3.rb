@@ -1,10 +1,28 @@
-# This is where I'm trying new Ruby things
+# Scenario: There is a bomb in either box 1 or
+#           box 2.  If you open the wrong box,
+#           then the bomb will explode immediately.
+#           Fortunately, the evil villian dropped
+#           her TODO list.  This TODO list tells
+#           us which box contains the bomb.  Generate
+#           a sequence of steps that will allow
+#           your robot to defuse the bomb.
+#
+# Map:
+#           1| |T| |2
+#           -+-+-+-+-
+#            | | | |
+#           -+-+-+-+-
+#            | | | |
+#           -+-+-+-+-
+#            | | | |
+#           -+-+-+-+-
+#            | |R| |
 
 4.times do
   puts("UP")
 end
 
-puts("READ(MAP)")
+puts("READ(TODO_LIST)")
 todo = 2
 
 if todo == 1
@@ -18,25 +36,5 @@ end
 end
 
 
-# if todo == 1
-#   2.times do
-#     puts("LEFT")
-#   end
-# else
-#   2.times do
-#     puts("RIGHT")
-#   end
-# end
-
-# 2.times do
-#   if todo == 1
-#     puts("LEFT")
-#   else
-#     puts("RIGHT")
-#   end
-# end
-
 puts("DEFUSE(BOMB)")
-
-
 
