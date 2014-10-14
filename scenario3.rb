@@ -25,12 +25,16 @@ end
 puts("READ(TODO_LIST)")
 todo = 2
 
+# Read the TODO list and figure out which direction the
+# bomb is in.
 if todo == 1
   direction = "LEFT"
 else
   direction = "RIGHT"
 end
 
+
+# Run 2 steps in that direction to arrive at the bomb.
 2.times do
   puts(direction)
 end
