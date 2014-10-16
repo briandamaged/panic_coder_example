@@ -1,6 +1,6 @@
 
 
-def go(dir, reps)
+def go(dir, reps = 1)
   reps.times do
     puts(dir)
   end
@@ -8,7 +8,7 @@ end
 
 
 # Shortcut method: Special way of calling #go
-def down(reps)
+def down(reps = 1)
   go("DOWN", reps)
 end
 
