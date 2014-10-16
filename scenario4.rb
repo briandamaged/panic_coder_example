@@ -1,11 +1,31 @@
 
-4.times do
-  puts("DOWN")
+
+def go(dir, reps)
+  reps.times do
+    puts(dir)
+  end
 end
 
-2.times do
-  puts("RIGHT")
+
+# Shortcut method: Special way of calling #go
+def down(reps)
+  go("DOWN", reps)
 end
+
+
+def right(reps)
+  reps.times do
+    puts("RIGHT")
+  end
+end
+
+down(4)
+right(2)
+
+
+
+
+
 
 puts("GET(SHOVEL)")
 
